@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGED | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Joseph</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<section class="video-hero">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="videos/aged-intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="video-overlay"></div>
+
+  <div class="hero-content">
+    <h1>AGED</h1>
+    <p class="motto">Future Farms. Smarter Lands. Better Biomes.</p>
+  </div>
+</section>
+
+
+  <main class="container">
+    <section class="hero">
+      <h2>Aspiring Agri-Tech Innovator</h2>
+      <p>Using clean design and clear code to transform agriculture through technology.</p>
+    </section>
+
+    <section class="section">
+      <h3>Featured Projects</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>AGED Platform</h4>
+          <p>A youth empowerment initiative through agricultural innovation.</p>
+        </div>
+        <div class="project-card">
+          <h4>Smart Weather App</h4>
+          <p>A minimal weather interface built with clarity and precision.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="social">
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+      <p class="footer-note">&copy; 2020 Joseph. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+<script>
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      navbar.classList.add('nav-hidden');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('nav-hidden');
+    }
+    lastScrollTop = scrollTop;
+  });
+</script>
+
+<script>
+  window.addEventListener('load', () => {
+    document.body.style.opacity = 1;
+  });
+</script>
+
+</body>
+</html>

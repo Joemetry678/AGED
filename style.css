@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+main {
+  padding-top: 80px;
+}
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-green: #2D6A4F;
+      --accent-green: #95D5B2;
+      --background-white: #ffffff;
+      --wheat-watermark: rgba(195, 233, 180, 0.2);
+    }
+
+    body {
+      font-family: 'Lexend', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-white);
+      color: var(--primary-green);
+      background-image: url('icons/wheat-watermark.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 40%;
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .navbar {
+      background-color: var(--primary-green);
+      padding: 20px 0;
+    }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-green);
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+}
+.navbar {
+  background-color: white;
+  color: var(--primary-green);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease;
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color:var(--ancient-green) ;
+  color: var(--primary-green);
+}
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: green;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .section {
+      padding: 40px 0;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: white;
+      border: 1px solid var(--accent-green);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+.video-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  margin: 0;
+}
+
+.hero-content .motto {
+  font-size: 1.5rem;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
+
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background: linear-gradient(90deg, #024929 0%, #ffbf00 100%);
+  color: white;
+  flex-wrap: wrap;
+  height: 320px; /* fixed height */
+  border-radius: 10px;
+   position: relative;
+  overflow: visible; /* allow overflow */
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  padding-right: 20px;
+  position: relative;
+  z-index: 2;
+  margin-top: -90px; /* Pull it upward */
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 240px;
+  text-align: right;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+position: relative;
+top: -30px;
+
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about-text {
+    padding-right: 0;
+  }
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.feature-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+.action-box {
+  background: var(--accent-green);
+  color: var(--primary-green);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.action-box img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: var(--primary-green);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #255f45;
+}
+
+.grid-2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.feature-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cta-box {
+  grid-row: 1 / span 2; /* span both rows */
+  background-image: url('images/cta-background.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cta-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
+  border-radius: 10px;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.cta-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+}
+
+.cta-button {
+  background-color: var(--highlight-yellow);
+  color: var(--primary-green);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.cta-button:hover {
+  background-color: #f1b500;
+}
+
+
+    footer {
+      background-color: var(--primary-green);
+      color: white;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    .social a img {
+      width: 24px;
+      margin: 0 10px;
+      filter: brightness(0) invert(1);
+    }
+
+    .footer-note {
+      font-size: 0.85rem;
+      color: var(--accent-green);
+    }
+
+    .footer-note a {
+      color: white;
+      text-decoration: underline;
+
+    }
+.round-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.feature-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.feature-image {
+  flex: 1;
+  min-width: 240px;
+  text-align: right;
+}
+
+.feature-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+body {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+<script>
+  document.body.style.opacity = 1;
+
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href && !href.startsWith('#') && !href.startsWith('http')) {
+        e.preventDefault();
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          window.location.href = href;
+        }, 400); // match fade-out duration
+      }
+    });
+  });
+</script>
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Joseph</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Aspiring Agri-Tech Innovator</h2>
+      <p>Using clean design and clear code to transform agriculture through technology.</p>
+    </section>
+
+    <section class="section">
+      <h3>Featured Projects</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>AGED Platform</h4>
+          <p>A youth empowerment initiative through agricultural innovation.</p>
+        </div>
+        <div class="project-card">
+          <h4>Smart Weather App</h4>
+          <p>A minimal weather interface built with clarity and precision.</p>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <footer>
+    <div class="container">
+      <div class="social">
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+      <p class="footer-note">&copy; 2020 Joseph. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
