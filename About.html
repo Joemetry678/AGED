@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Joseph</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">AGED</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main class="container">
+  <section class="hero">
+    <h1>AGED — Agricultural & Geographical Engineering Development</h1>
+    <p class="motto">"Future Farms. Smarter Lands. Better Biomes."</p>
+  </section>
+
+ <section class="about-hero">
+  <div class="about-text">
+    <h2>About AGED</h2>
+    <p>
+      AGED is a youth-driven agri-tech initiative rethinking the way we farm, feed, and flourish.
+      With a mission to equip farmers and communities with cutting-edge tools, AGED brings the power
+      of AI, innovation, and community to agriculture in Africa.
+    </p>
+  </div>
+  <div class="about-image">
+    <img src="images/png.png" alt="AGED Illustration">
+  </div>
+</section>
+
+
+  <section class="section">
+    <h2>History</h2>
+    <p>
+      AGED started as a dream — one driven by firsthand experiences of the limitations in current farming systems, particularly in rural communities across Nigeria. From unreliable access to agronomic support, to data being nonexistent or underutilized, AGED emerged with the goal of turning that gap into opportunity. Born in Bwari, Nigeria, it now grows as a blueprint for youth-led innovation in agriculture, where each field, soil type, and plant health can be digitally understood and acted upon.
+    </p>  </div>
+  <div class="feature-image">
+    <img src="images/history.jpg" alt="AI Scan" />
+
+  </section>
+
+  <section class="section">
+    <h2>Our Vision</h2>
+    <p>
+      To cultivate a digitally-enabled agricultural ecosystem where every farm — no matter how small — is intelligent, efficient, and connected to a wider biome of support, sustainability, and growth.
+    </p>
+  </div>
+  <div class="feature-image">
+    <img src="images/vision.jpg" alt="AI Scan" />
+  </section>
+
+  <section class="section">
+    <h2>Our Mission</h2>
+    <p>
+      To empower youth and farmers with smart tools, AI-driven solutions, and collaborative infrastructure that revolutionize food systems, enhance productivity, and build resilience in Africa's lands and livelihoods.
+    </p>
+  </div>
+  <div class="feature-image">
+    <img src="images/mission.jpg" alt="AI Scan" />
+  </section>
+
+  <section class="section">
+    <h2>What We Do</h2>
+    <div class="project-grid">
+      <!-- Left Column: Two Feature Cards -->
+      <div class="project-card">
+        <img src="icons/ai-scan.svg" alt="AI Scan" class="round-icon">
+        <h3>AI-Powered Plant & Soil Diagnostics</h3>
+        <p>Users scan plant or soil images to receive AI-generated diagnoses — including pest infections, nutrient deficiencies, and crop health assessments — all in seconds.</p>
+        <img src="icons/farm-logistics.svg" alt="Farm Tools" class="round-icon">
+        <h3>Smart Record-Keeping & Logistics</h3>
+        <p>From input tracking to delivery routes, farmers can manage inventory, link with buyers, and plan efficiently — all in one mobile-accessible space.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="icons/gps-map.svg" alt="GPS Mapping" class="round-icon">
+        <h3>GPS-Based Risk & Crop Mapping</h3>
+        <p>Our system uses real-time map layers to suggest crop choices, detect flood/drought risk, and guide farmers on what grows best — exactly where they are.</p>
+        <img src="icons/innovation-hub.svg" alt="Innovation Hub" class="round-icon">
+        <h3>Home Hub & Innovation Access</h3>
+        <p>Users stay connected to AGED's core team for training, tool upgrades, agricultural resources, and a vibrant community of innovators solving real agro problems.</p>
+      </div>
+
+    <!-- Right Tall Box: Image + Button -->
+    <div class="action-box">
+    <div class="cta-box">
+      <div class="cta-content">
+      <img src="images/contact-preview.jpg" alt="Contact Us" />
+      <h3>Need Support or Want to Join Us?</h3>
+      <p>Let’s connect and grow something meaningful together.</p>
+      <a href="contact.html" class="cta-button">Contact Us</a>
+  </div>
+</section>
+  </section>
+</main>
+
+  <footer>
+    <div class="container">
+      <div class="social">
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+      <p class="footer-note">&copy; 2020 Joseph. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        navbar.classList.add('nav-hidden');
+      } else {
+        navbar.classList.remove('nav-hidden');
+      }
+      lastScrollTop = scrollTop;
+    });
+  </script>
+
+<script>
+  window.addEventListener('load', () => {
+    document.body.style.opacity = 1;
+  });
+</script>
+
+
+</body>
+</html>
