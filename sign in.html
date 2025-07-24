@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<html>
+ <head>
+    <title>Web Learn</title>
+	<link rel= "stylesheet" href = "style.css">
+	<meta charset= "UTF-8">
+	<meta name= "description" content= "Coding and Programming Classes">
+	<meta name= "author" content= "Joseph Salaki">
+	<meta name= "viewport" content= "width= device-width, initial-scale= 1.0">
+	<link rel= "icon" href= "icons/favicon.svg" type= "image/svg+xml">
+ </head>
+  
+ <body id= "signin-page">
+    <nav class="nav bar">
+	 <div class="nav-info">
+	  <img src="images/logo.png" alt= "logo" class= "logo" width = "100">
+	   <span class= "brand-name"> Web Learn </span>
+	
+	<ul class="nav-links">
+	 <a href= "index.html" class=naked> Home</a>
+	 <a href= "course.html." class=naked> Course</a>
+	 <a href= "support.html." class=naked> Support</a>
+	 <a href= "Contact.html" class=naked> Contact</a>
+	 <a href= "Sign in.html" class=naked> Sign in</a>
+	</ul>
+    </nav> 
+
+	<section>
+	<h2> Log in</h2>
+	<p> Create a <strong>free</strong> account today to track your progress, get cetificates,</p>
+	<p>apply for live classes, and get access to more features and learning materials</p>
+	<p>⭐ Over 12,000 students enrolled and counting.</p>
+
+
+	</section>
+	
+<section class="form-section">
+  <div class="form-container">
+    <div class="form-toggle">
+      <button id="show-signin" class="active">Sign In</button>
+      <button id="show-signup">Sign Up</button>
+    </div>
+	
+	
+
+    <!-- SIGN IN FORM -->
+    <form id="signin-form" class="form active" action="signin.php" method="post">
+      <h2>Sign In</h2>
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="example@gmail.com" required>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="••••••••" required>
+
+      <input type="submit" value="Sign In" class="submit-btn">
+
+    </form>
+
+<form id="signup-form" class="form" action="signup.php" method="post">
+  <h2>Sign Up</h2>
+
+  <label for="signup-name">Name:</label>
+  <input type="text" id="signup-name" name="username" placeholder="James Colman" required>
+
+  <label for="signup-email">Email:</label>
+  <input type="email" id="signup-email" name="email" placeholder="example@gmail.com" required>
+
+  <label for="signup-phone">Phone Number:</label>
+  <input type="tel" id="signup-phone" name="phone-number" placeholder="234" required>
+
+  <label for="signup-country">Country:</label>
+  <input type="text" id="signup-country" name="country" placeholder="United Kingdom" required>
+
+  <label for="signup-password">Password:</label>
+  <input type="password" id="signup-password" name="password" required>
+
+  <label for="signup-confirm">Confirm Password:</label>
+  <input type="password" id="signup-confirm" name="confirm-password" required>
+
+  <input type="submit" value="Sign Up" class="submit-btn">
+</form>
+   <p>Ensure you've signed up before <br>signing in if you're a <b>new user!<br><br><br>This allows us to store your data</p>
+   <p><small>Your information is encrypted and protected by <br>Web Learn's privacy policies.</small></p>
+  </div>
+</section>
+
+<section>
+   <p>Need help? <a href="support.html">Visit our Support Center</a></p>
+
+</section>
+
+
+    <footer class= "footer">
+	  <div class= "socials">
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+		<a href="#"><img src="icons/pinterest.svg" alt="Pinterest"></a>
+		<a href="#"><img src="icons/gmail.svg" alt="Gmail"></a>
+		<a href="#"><img src="icons/whatsapp.svg" alt="whatsapp"></a>
+      </div>
+     <p class= "footer-message">"Visit our Social Platforms for follow ups on Latest Trends and News</p>
+     <p class= "footer-message">&copy; 2025 Web Learn <a href= "Privacy.index">Privacy Policy</a>|<a href= "Privacy.index">Terms and Conditions</a></p>
+    </footer>
+	 
+	<script src="script.js"></script>
+	
+   </body>
+  
+ <html>
